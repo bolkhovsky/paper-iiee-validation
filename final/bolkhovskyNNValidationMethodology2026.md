@@ -1,4 +1,4 @@
-# Методология валидации нейросетевых прогнозов ледовой обстановки на основе декомпозиции интегрированной ледовой пограничной ошибки
+# Геоинформационная методика оценки качества нейросетевых прогнозов морского льда на основе пространственной декомпозиции ошибок
 
 **Болховский И.Д., Биденко С.И.**
 
@@ -6,15 +6,15 @@
 
 ## Аннотация
 
-В работе представлена методика валидации нейросетевых прогнозов ледовой обстановки для задач навигационно-гидрографического обеспечения Северного морского пути. Показано, что традиционные метрики оценки качества прогнозов (RMSE, MAE, R²) не учитывают пространственное распределение ошибок и не позволяют оценить пригодность прогноза для навигационных задач. Представлена интегрированная ледовая пограничная ошибка (IIEE) и её декомпозиция на компоненты AEE (ошибка площади) и ME (ошибка положения границы). Обосновано, что для навигационных задач минимизация ME имеет приоритет над минимизацией AEE. Предложена четырёхэтапная методика валидации с критерием пригодности модели ME/IIEE < 0.5. Методика ориентирована на интеграцию в геоинформационные системы навигационно-гидрографического обеспечения.
+В работе представлена геоинформационная методика оценки качества нейросетевых прогнозов морского льда для задач навигационно-гидрографического обеспечения Северного морского пути. Показано, что традиционные метрики оценки качества прогнозов (RMSE, MAE, R²) не учитывают пространственное распределение ошибок и не позволяют оценить пригодность прогноза для навигационных задач. Представлена методика пространственной декомпозиции ошибок на основе интегрированной ледовой пограничной ошибки (IIEE → AEE + ME), где AEE — ошибка площади, ME — ошибка положения границы. Обосновано, что для навигационных задач минимизация ME имеет приоритет над минимизацией AEE. Предложена четырёхэтапная методика валидации с критерием пригодности модели ME/IIEE < 0.5. Методика реализуется как модуль геоинформационной системы навигационно-гидрографического обеспечения.
 
-**Ключевые слова:** валидация прогнозов, морской лёд, искусственные нейронные сети, IIEE, навигационно-гидрографическое обеспечение, Северный морской путь.
+**Ключевые слова:** геоинформационные системы, оценка качества прогнозов, морской лёд, искусственные нейронные сети, пространственный анализ, IIEE, навигационно-гидрографическое обеспечение, Северный морской путь.
 
 ## Abstract
 
-This paper presents a methodology for validating neural network sea ice forecasts for navigation and hydrographic support of the Northern Sea Route. It is shown that traditional forecast quality metrics (RMSE, MAE, R²) do not account for the spatial distribution of errors and cannot assess forecast suitability for navigation tasks. The Integrated Ice Edge Error (IIEE) and its decomposition into AEE (Absolute Extent Error) and ME (Misplacement Error) components are presented. It is demonstrated that for navigation tasks, minimizing ME takes priority over minimizing AEE. A four-stage validation methodology with a model suitability criterion of ME/IIEE < 0.5 is proposed. The methodology is designed for integration into geoinformation systems for navigation and hydrographic support.
+This paper presents a geoinformation methodology for quality assessment of neural network sea ice forecasts for navigation and hydrographic support of the Northern Sea Route. It is shown that traditional forecast quality metrics (RMSE, MAE, R²) do not account for the spatial distribution of errors and cannot assess forecast suitability for navigation tasks. A spatial error decomposition methodology based on the Integrated Ice Edge Error (IIEE → AEE + ME), where AEE is the Absolute Extent Error and ME is the Misplacement Error, is presented. It is demonstrated that for navigation tasks, minimizing ME takes priority over minimizing AEE. A four-stage validation methodology with a model suitability criterion of ME/IIEE < 0.5 is proposed. The methodology is implemented as a geoinformation system module for navigation and hydrographic support.
 
-**Keywords:** forecast validation, sea ice, neural networks, IIEE, navigation and hydrographic support, Northern Sea Route.
+**Keywords:** geoinformation systems, forecast quality assessment, sea ice, neural networks, spatial analysis, IIEE, navigation and hydrographic support, Northern Sea Route.
 
 ## Введение
 
